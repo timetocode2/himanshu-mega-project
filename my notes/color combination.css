@@ -1,0 +1,27 @@
+/* 1. Dark theme :- */
+    header { 
+        background-color:black;
+         color:white; 
+         border: none;         
+         border-top: 3px solid white ;
+
+        }
+
+    nav { 
+        background-color:black;
+         color:white; 
+         border-bottom: 3px solid white ;
+        }
+
+    header { 
+        background-color:black;
+         color:white; 
+         border: none;
+        }
+
+    header { 
+        background-color:black;
+         color:white; 
+         border: none;
+        }
+
