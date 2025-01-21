@@ -19,20 +19,26 @@ helpcircle.addEventListener("click", () => {
 
 });
 
-const appsss = document.getElementById("apps");
-const main = document.getElementById("container");
 
-apps.addEventListener("click", (e) => {
-    e.preventDefault();
-    loadPage("mega_calc.html");
 
-});
 
-function loadPage(page) {
-    fetch(page)
-    .then((response) => response.text())
-    .then((html) => {
-        main.innerHTML = html;
-      })
-      .catch((error) => console.error("Error loading page:", error));
-  };
+
+
+
+// const appsss = document.getElementById("apps");
+// const main = document.getElementById("container");
+
+// apps.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     loadPage("mega_calc.html");
+
+// });
+
+// function loadPage(page) {
+//     fetch(page)
+//     .then((response) => response.text())
+//     .then((html) => {
+//         main.innerHTML = html;
+//       })
+//       .catch((error) => console.error("Error loading page:", error));
+//   };

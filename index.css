@@ -1,32 +1,36 @@
 * {
     padding: 0;
     margin: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
-
-.white-border {
-    border: rgb(240, 35, 69) solid;
-    border-width: 1px 4px 4px 4px;
-    color: #333333;
-}
-
 html {
     width: 100%;
     background-color: #101010;
     user-select: none;
 }
+a:link, a:visited{
+    color: #720b0b;
+}
 
-body {
+.white-border {
+    border: solid rgb(240, 35, 69);
+    border-width: 1px 4px 4px 4px;
+    color: white;
+}
+
+
+.body1 {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-header {
+.header1 {
     background: linear-gradient(to bottom, #ffe4f0, #ffd6e8);
     text-shadow: 2px 2px 5px rgb(224, 81, 81);
-    color: #353535;
+    color: #720b0b;
     height: 50px;
     font-size: 37px;
     font-weight: 600;
@@ -38,7 +42,7 @@ header {
 
 }
 
-nav {
+.nav1 {
     z-index: 100;
     padding: 5px;
     padding-left: 19px;
@@ -49,17 +53,17 @@ nav {
     width: 100%;
     font-weight: 700;
     height: 37px;
-    color: #333333;
+    color: #720b0b;
+    text-decoration-line: underline;
 }
-
-nav ul {
+.nav1 ul {
     display: grid;
     grid-template-columns: 109px 109px 109px 109px;
     list-style: none;
     padding-left: 12px;
 }
 
-li {
+.nav1 ul li {
     list-style: "❤";
     padding-left: 5px;
 
