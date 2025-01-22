@@ -177,6 +177,10 @@ z-index: 100;
     flex-wrap: wrap;
     align-content: center;
     row-gap: 20px;
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+    text-shadow: #333333b2 9px 9px 3px;
 }
 
 

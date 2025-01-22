@@ -5,84 +5,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Anton+SC&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+AU+SA:wght@100..400&family=Rubik+Vinyl&family=Sixtyfour&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="calc.css">
 </head>
 
 <body class="body1">
     <div>
-    <header class="flexcenter header1">❤ Welcome Dear</header>
+        <header class="flexcenter header1">❤ Welcome To Calc</header>
 
 
-    <nav class="white-border nav1">
-        <ul class="">
-            <li>Home</li>
-            <a href="calc.html"><li>Apps</li></a>
-            <a href="about.html"><li>About</li></a>
-            <a href="setting.html"><li>Setting</li></a>
-    </ul>
-    </nav>
+        <nav class="white-border nav1">
+            <ul class="">
+                <a href="home.html">
+                    <li>Home</li>
+                </a>
+                <li>Apps</li>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="setting.html">
+                    <li>Setting</li>
+                </a>
+
+            </ul>
+        </nav>
 
 
-    <main id="container" class="flexcenter homepage white-border">
-        <h1 id="first-text">Dear&nbsp;&nbsp;<span id="id1"> Your Name</span></h1>
-        <h1>
-            Welcome &nbsp; to <br> My web
-        </h1>
-        <p class="welcome1 welcome">Let me take you to a place</p>
-        <p class="welcome">
-            Where dreams meet design ❤
-        </p>
-        <!-- <hr> -->
-        <div id="extra" class="flexcenter">
-            <div class="photo"></div>
-        </div>
-        <div id="mymedia">
-            <div id="prev" class="flexcenter">Pre...</div>
-            <div id="next" class="flexcenter">Next</div>
-        </div>
-        <div class="bigtext flexcenter "><h1 class="noteforyou flexcenter">A Little Note for You</h1>
-            <p>
-                Sometimes, life gives us surprises in the most unexpected ways. Meeting you feels like one of those rare gifts that make everything brighter. Whether it's the way you laugh, the way you see the world, or the way you make even the simplest moments feel magical, it all inspires me. They say some people cross our paths for a reason, and I truly believe you are one of them. 
-            </p>
-            <p>
-                Friendship is where it all begins, and it's amazing how a simple bond can transform into something so meaningful. I've always admired the way you treat others with kindness and how your presence lights up any room. You might not even realize it, but you have this ability to make people feel special just by being yourself. 
-            </p>
-            <p>
-                If I were to write about everything I admire about you, this page might not be enough! But here's the thing—life is not just about grand moments or big words. It's also about those little things: the small gestures, the smiles that linger, and the conversations that stay with us long after they're over. And with you, every moment feels like a memory worth cherishing. 
-            </p>
-            <p>
-                To be honest, I sometimes wonder if words are enough to express what I feel, but then again, words are all I have. I wanted to take this chance to tell you how much your presence means to me. Whether we're laughing over silly jokes, talking about random things, or just sitting in silence, it all feels special because it's with you.
-            </p>
-            <p>
-                At the end of the day, all I truly wish for is your happiness. Whether you're chasing your dreams, overcoming challenges, or just enjoying life's little moments, I hope you know there will always be someone cheering for you. Because you're not just a friend, you're someone who inspires me to be better, to see the beauty in everything, and to believe in the power of connection.
-            </p>
-            <p>
-                So, here's to many more shared laughs, unforgettable moments, and beautiful days ahead. Life has so much to offer, and I feel lucky to share even a small part of it with you. Thank you for being you, for being someone who makes life a little more meaningful.
-            </p>
-        </div>
-            <div  class="afternote p flexcenter"style="text-align: center; font-weight: bold;">You’re truly special, and I hope you never forget that.🥰</div>
+        <main class="flexcenter calc-body">
+            <div class="flexcenter calc-nav">
+                <ul id="calc-nav-ul">
+                    <li id="calc-nav-themes">Themes</li>
+                    <li id="calc-nav-fonts">Fonts</li>
+                    <li id="calc-nav-fun">Fun calc</li>
+                    <li id="calc-nav-about">About</li>
+                </ul>
+            </div>
+            <div id="calc-main" class="calc-main">
 
+                <div id="calc-themes-hide" class="calc-control flexcenter">
+                    <span class="one">=> Themes</span>
+                    <ul>
+                        <li id="calc-themes1">Default</li>
+                        <li id="calc-themes2">Dark Theme</li>
+                        <li id="calc-themes3">Violet Theme</li>
+                        <li id="calc-themes4">Cyan Theme</li>
+                        <li id="calc-themes5">Green Theme</li>
+                        <li id="calc-themes6">Yellow Theme</li>
+                        <li id="calc-themes7">Blue Theme</li>
+                        <li id="calc-themes8">Orange Theme</li>
+                    </ul>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control1">Close</div>
+                </div>
+                <div id="calc-fonts-hide" class="calc-control flexcenter">
+                    <span class="one">Fonts</span>
+                    <ul>
+                        <li id="calc-fonts1">font type1</li>
+                        <li id="calc-fonts2">font type2</li>
+                        <li id="calc-fonts3">font type3</li>
+                        <li id="calc-fonts4">font type4</li>
+                        <li id="calc-fonts5">font type5</li>
+                        <li id="calc-fonts6">font type6</li>
+                    </ul>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control2">Close</div>
 
+                </div>
+                <div id="calc-fun-hide" class="calc-control flexcenter">
+                    <span class="one">Fun calc</span>
+                    <ul>
+                        <li id="calc-fun1">1. loding...</li>
+                        <li id="calc-fun2">2. loding...</li>
+                        <li id="calc-fun3">3. loding...</li>
+                        <li id="calc-fun4">4. loding...</li>
+                        <li id="calc-fun5">5. loding...</li>
+                        <li id="calc-fun6">6. loding...</li>
+                        <li id="calc-fun7">7. loding...</li>
+                        <li id="calc-fun8">8. loding...</li>
+                    </ul>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control3">Close</div>
+                </div>
 
-        <div class="afternote flexcenter">Hiihihi Kaisa Laga Mera Majak.. <br> I was just kidding. 😁</div>
-        <div class="imgafternote"></div>
+                <div id="calc-about-hide" class="calc-control flexcenter">
+                    <span class="one">About</span>
+                    <ul>
+                        <li id="calc-about1">1. coming...</li>
+                        <li id="calc-about2">2. coming...</li>
+                        <li id="calc-about3">3. coming...</li>
+                        <li id="calc-about4">4. coming...</li>
+                        <li id="calc-about5">5. coming...</li>
+                        <li id="calc-about6">6. coming...</li>
+                        <li id="calc-about7">7. coming...</li>
+                        <li id="calc-about8">8. coming...</li>
+                        <li id="calc-about9">9. coming...</li>
+                        <li id="calc-about10">10. coming...</li>
+                    </ul>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control4">Close</div>
+                </div>
+
+                <div id="calc-main2" class="calc-main2">
+                    <div id="calc-scrn" class="calc-scrn">
+                        <span id="span">hello dear ! You're welcome a lot
+                        </span>
+                        <div id="calc-scrn2" class="calc-scrn2 flexcenter">
+                            <!-- <div id="calc-output-btn1" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn2" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn3" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn4" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn5" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn6" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn7" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn8" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn9" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn10" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn11" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn12" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn13" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn14" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn15" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn16" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn17" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn18" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn19" class="calc-scrn2-div"></div>
+                            <div id="calc-output-btn20" class="calc-scrn2-div"></div> -->
+                        </div>
+
+                        <div class="calc-keypad-back" id="calc-keypad-back">
+                            <div id="calc-keypad" class="calc-keypad">
+                                <div id="calc-keypad-btn1" class="calc-keypad-btn1 calc-key flexcenter">1</div>
+                                <div id="calc-keypad-btn2" class="calc-keypad-btn2 calc-key flexcenter">2</div>
+                                <div id="calc-keypad-btn3" class="calc-keypad-btn3 calc-key flexcenter">3</div>
+                                <div id="calc-keypad-btn4" class="calc-keypad-btn4 calc-key flexcenter">4</div>
+                                <div id="calc-keypad-btn5" class="calc-keypad-btn5 calc-key flexcenter">5</div>
+                                <div id="calc-keypad-btn6" class="calc-keypad-btn6 calc-key flexcenter">6</div>
+                                <div id="calc-keypad-btn7" class="calc-keypad-btn7 calc-key flexcenter">7</div>
+                                <div id="calc-keypad-btn8" class="calc-keypad-btn8 calc-key flexcenter">8</div>
+                                <div id="calc-keypad-btn9" class="calc-keypad-btn9 calc-key flexcenter">9</div>
+                                <div id="calc-keypad-btn10" class="calc-keypad-btn10 calc-key flexcenter">0</div>
+                                <div id="calc-keypad-btn11" class="calc-keypad-btn11 calc-key flexcenter">-</div>
+                                <div id="calc-keypad-btn12" class="calc-keypad-btn12 calc-key flexcenter">+</div>
+                                <div id="calc-keypad-btn13" class="calc-keypad-btn13 calc-key flexcenter">*</div>
+                                <div id="calc-keypad-btn14" class="calc-keypad-btn14 calc-key flexcenter">/</div>
+                                <div id="calc-keypad-btn15" class="calc-keypad-btn15 calc-key flexcenter">=</div>
+                                <div id="calc-keypad-btn16" class="calc-keypad-btn16 calc-key flexcenter">clear</div>
+                                <div id="calc-keypad-" class="calc-keypad-btn17 calc-key flexcenter"></div>
+                                <div id="calc-keypad-" class="calc-keypad-btn18 calc-key flexcenter"></div>
+                                <div id="calc-keypad-" class="calc-keypad-btn19 calc-key flexcenter"></div>
+                                <div id="calc-keypad-" class="calc-keypad-btn20 calc-key flexcenter"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div> -->
     </main>
-    <div class="helpcircle" id="helpcircle"></div>
-    <div id="helpbox" class="helpbox">
-        <h1>Hi buddy</h1>
-        this is not our first time when we are trying to build a website. <br>
-
-        we already have build such type of great projects so many times , now this all just a game of left hand .. Are you even  understanding what I am saying <br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, exercitationem esse dignissimos nesciunt labore nostrum magni suscipit voluptates unde consequuntur beatae ipsa magnam eveniet numquam repellendus a expedita. Ut, mollitia ex culpa, et vero harum earum laborum ipsam debitis, neque voluptatum laboriosam! Reprehenderit, molestiae? Inventore, minima maxime at, magnam aliquam facilis dicta accusantium distinctio architecto expedita repellendus illum ipsa vitae voluptates. Obcaecati ea necessitatibus blanditiis fugit nihil esse autem nobis, ullam assumenda ipsum fugiat vel, sequi iste eum velit labore delectus libero ad. Fuga a, unde eos distinctio aut dolor modi quaerat laudantium officiis pariatur commodi perferendis perspiciatis cum atque iure illum eius voluptatum accusantium ut quasi, error, ducimus animi. Cumque quos eaque at facilis, iste consectetur animi corrupti illo accusantium id facere sunt provident. Fugiat nobis aliquam aspernatur similique veritatis nihil at dolores necessitatibus ratione sit soluta voluptatum nemo fuga libero voluptas rem, laudantium illo cumque magnam modi! In quia fugiat molestias magni sed qui praesentium voluptate exercitationem recusandae impedit. Repudiandae deserunt quod explicabo odit iste culpa eius maxime ducimus vitae sint? Pariatur optio, dolore voluptatem aspernatur cumque cum debitis obcaecati amet neque tenetur sit nobis eveniet ea doloremque totam molestias, omnis sapiente id, nostrum aliquam! Architecto, illo ducimus?
-    </div>
-    <div class="aftrerpic" id="afterpic"></div>
+    <script src="calc.js">
 
 
-    <footer>
-    </footer>
 
-</div>
-    <script src="index.js">
     </script>
 </body>
+
 </html>

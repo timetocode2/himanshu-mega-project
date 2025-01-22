@@ -153,7 +153,7 @@ margin: 20px 0px 10px 0px;}
 .go-back-button{
     height: 50px;
     border: #fdfbfb 4px solid;
-    background-color: rgba(14, 38, 247, 0.932);
+    background-color: rgb(14, 38, 247);
     width: 50%;
     align-self: center;
     color: white;

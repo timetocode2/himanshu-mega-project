@@ -9,6 +9,9 @@ html {
     background-color: #101010;
     user-select: none;
 }
+:root{
+    --animated-world: first-anime-in-help 0.3s  linear infinite forwards 
+}
 a:link, a:visited{
     color: #720b0b;
 }
@@ -125,6 +128,7 @@ div.homepage {
 
 
 #extra {
+
     width: 330px;
     height: 219px;
     background: linear-gradient(to bottom, #ffd6e8, #ffb3d9);
@@ -136,6 +140,7 @@ div.homepage {
 }
 
 .photo {
+
     background-image: url("photo.jpg");
     width: 300px;
     height: 189px;
@@ -146,6 +151,7 @@ div.homepage {
 }
 
 #mymedia {
+    
     width: 300px;
     display: flex;
     justify-content: space-between;
@@ -154,6 +160,7 @@ div.homepage {
 
 #prev,
 #next {
+
     border: 5px solid rgb(240, 35, 69);
     width: 110px;
     border-radius: 12px;
@@ -210,19 +217,30 @@ div.homepage {
 p:active, 
 .welcome:active, 
 .imgafternote:hover {
-    transform: rotateY(180deg);
-    transition: 1s;
+animation: flip 3s linear  infinite alternate ;    
+}
+@keyframes flip {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+    
 }
 .photo:active{
     transform: rotateY(180deg) rotateX(180deg);
-    transition: 1s;
+    transition: 1s    
+
 }
 #extra:active {
     transform: rotateX(180deg);
     transition: 0.4s;
+    animation: var(--animated-world);
 
 }
 #prev:hover, #next:hover{
+    animation: var(--animated-world);
     transform: rotateX(30deg) rotateY(-10deg) rotateZ(0deg);    transition: 0.5s;
     background: linear-gradient(to bottom, #c2a3b1, #fdb3d8);
     box-shadow: 7px 12px 3px rgba(0, 0, 0, 0.514);
@@ -241,8 +259,17 @@ p:active,
     top: 86vh;
     right: 10px;
     transition: 0.3s;
+animation: var(--animated-world);
 } 
-.p{margin-left: ;}
+
+@keyframes first-anime-in-help {
+    0%{
+        border:blue 4px solid;
+    }
+    100%{
+        border: rgb(5, 252, 5) 4px solid;
+    }
+}
 .helpbox{
     position: fixed;
     top: 120px;
